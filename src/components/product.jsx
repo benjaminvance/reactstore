@@ -29,8 +29,8 @@ const Product = (props) => {
             <h2>{props.data.title}:</h2>
             
             <div className="prices">
-            <label>Price: ${props.data.price}</label>
-            <label>Total: {getTotal()}</label>
+            <label>Price: ${props.data.price.toFixed(2)}</label>
+            <label>Total: ${getTotal()}</label>
             </div>
            
             <div className="controls">
